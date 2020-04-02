@@ -1,0 +1,16 @@
+.danger{
+    color: red;
+}
+.success{
+    color: #70a800;
+}
+.normal{
+    color: white;
+}
+.list-item{
+    padding-left: 12px;
+}
+.infected-list{
+    height: 300px;
+    overflow-y: scroll;
+}

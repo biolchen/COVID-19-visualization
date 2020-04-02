@@ -1,0 +1,22 @@
+.header-bg{
+    background-color: #222222;
+    margin: 8px;
+}
+
+.header-text-color{
+    /*color: #8f8f8f;*/
+    padding: 8px;
+    flex-shrink: 1;
+    overflow: hidden;
+    align-self: center;
+    font-size: 24px;
+}
+.menu-icon{
+    float: right;
+    margin: 12px;
+    width: 24px;
+}
+.logo-icon{
+    margin: 12px;
+    float: left;
+}

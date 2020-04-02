@@ -1,0 +1,20 @@
+.main-map{
+    margin: 8px;
+    background-color: #222222;
+    height: 500px;
+}
+.map-header{
+    color: white;
+    text-align: center;
+}
+.outer-main{
+    margin: 8px;
+    background-color: #222222;
+    height: 80px;
+}
+.overall-desc{
+    color: white;
+    padding: 8px;
+    overflow-y: scroll;
+    height: 80px;
+}
