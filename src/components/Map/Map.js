@@ -1,17 +1,45 @@
 import React, {Component} from 'react';
+import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
 import './index.css';
 
-class Map extends Component{
-    constructor(props){
+class Map extends Component {
+    constructor(props) {
         super(props);
+        this.state = {
+            lat: '',
+            lng : ''
+        }
     }
 
-    render(){
-        return(
+    render() {
+        const {lat, lng} = this.props;
+        return (
             <div className='main-map'>
-                <h1 className='map-header'>World Map</h1>
+                <LeafletMap
+                    className='map-leaflet'
+                    center={[lat, lng]}
+                    zoom={6}
+                    maxZoom={10}
+                    attributionControl={true}
+                    zoomControl={true}
+                    doubleClickZoom={true}
+                    scrollWheelZoom={true}
+                    dragging={true}
+                    animate={true}
+                    easeLinearity={0.35}
+                >
+                    <TileLayer
+                        url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+                    />
+                    <Marker position={[lat, lng]}>
+                        <Popup>
+                            {this.props.selectedCountry}
+                        </Popup>
+                    </Marker>
+                </LeafletMap>
             </div>
         )
     }
 }
+
 export default Map;

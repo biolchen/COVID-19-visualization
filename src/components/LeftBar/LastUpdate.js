@@ -10,7 +10,7 @@ class LastUpdate extends Component{
         return(
             <div className='main'>
                 <h5 className='title'>Last update at (M/D/YYYY)</h5>
-                <h3 className='title'>3/28/2020, 9:21:05 PM</h3>
+                <h3 className='title'>{this.props.lastUpdated}</h3>
             </div>
         )
     }

@@ -13,7 +13,7 @@ class Index extends Component{
             <div>
                 <TotalConfirmed {...this.props}/>
                 <CountryConfirmed {...this.props}/>
-                <LastUpdate/>
+                <LastUpdate {...this.props}/>
             </div>
         )
     }

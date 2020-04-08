@@ -1,8 +1,9 @@
 .main-map{
     margin: 8px;
     background-color: #222222;
-    height: 500px;
+    height: 570px;
 }
+
 .map-header{
     color: white;
     text-align: center;
@@ -17,4 +18,10 @@
     padding: 8px;
     overflow-y: scroll;
     height: 80px;
+}
+.map-leaflet{
+    position: absolute;
+    top: 0;
+    width: 98%;
+    height: 580px;
 }

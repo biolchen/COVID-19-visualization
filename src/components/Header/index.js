@@ -12,7 +12,7 @@ class Header extends Component {
             <div className="header-bg">
                 <SketchOutlined className="logo-icon" />
                 <span className="header-text-color">
-                    Coronavirus COVID-19 Global Cases
+                    COVID-19 Global Cases
                 </span>
                 <MenuOutlined className="menu-icon" />
             </div>

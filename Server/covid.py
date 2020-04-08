@@ -39,6 +39,9 @@ def main(url, driver):
     confirmed = total_confirmed[1].text
     recovere = total_confirmed[-1].text
     death = total_confirmed[-3].text
+    total_fig = []
+    for item in  total_confirmed:
+        total_fig.append(item.text)
     payload = []
     list_of_confirmed_country = soup.find_all('span', attrs={'class': 'flex-horizontal feature-list-item ember-view'})
     # print('---- now print left admin 1 panel ---')
@@ -51,7 +54,8 @@ def main(url, driver):
         'confirmed': confirmed,
         'recovere': recovere,
         'death': death,
-        'payload': payload
+        'payload': payload,
+        'totalFigure': total_fig
     }
     # print('final response', response)
     # print('----- now print confirmed Province/State/Dependency ---')

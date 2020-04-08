@@ -19,7 +19,7 @@ class Index extends Component{
                         <InfectedList status={'recoverd'} {...this.props}/>
                     </Col>
                 </Row>
-                <GraphComponent/>
+                <GraphComponent {...this.props}/>
             </div>
         )
     }

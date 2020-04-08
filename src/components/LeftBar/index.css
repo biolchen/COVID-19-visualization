@@ -2,6 +2,12 @@
     margin: 8px;
     background-color: #222222;
 }
+.main-confirmedCountry{
+    height: 520px;
+}
+.main-infected{
+    height: 450px;
+}
 .title{
     color: #bdbdbd;
     text-align: center;
@@ -21,6 +27,6 @@
     padding-left: 12px;
 }
 .country-list{
-    height: 380px;
+    height: 440px;
     overflow-y: scroll;
 }
